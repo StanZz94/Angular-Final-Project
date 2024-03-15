@@ -1,0 +1,28 @@
+
+/*Footer*/
+
+#footer {
+    min-height: 70px;
+    background: #222222;
+    color: #fff;
+}
+#footer .copyright,
+#footer .designer {
+    padding-top: 25px;
+    font-size: 14px;
+}
+#footer .copyright p {
+    text-align: left;
+}
+#footer .designer p {
+    text-align: right;
+}
+#footer .copyright p,
+#footer .copyright p span a,
+#footer .designer p,
+#footer .designer a {
+    font-size: 14px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 3px;
+}
