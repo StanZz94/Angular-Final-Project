@@ -15,7 +15,7 @@ import { SliderComponent } from './slider/slider.component';
     AppComponent,
     MainComponent,
     PostsListComponent,
-    SliderComponent
+    SliderComponent,
   ],
   imports: [
     BrowserModule,
