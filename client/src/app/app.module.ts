@@ -8,12 +8,14 @@ import { SharedModule } from './shared/shared.module';
 import { MainComponent } from './main/main.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PostsListComponent } from './posts-list/posts-list.component';
+import { SliderComponent } from './slider/slider.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    PostsListComponent
+    PostsListComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
