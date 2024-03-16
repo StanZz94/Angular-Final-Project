@@ -1,5 +1,7 @@
+import { User } from "./user";
+
 export interface Post {
-    _ownerId: string;
+    _ownerId: User;
     title: string;
     imageUrl: string;
     myPost: string;
