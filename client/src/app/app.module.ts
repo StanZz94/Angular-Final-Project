@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { PostsListComponent } from './posts-list/posts-list.component';
 import { SliderComponent } from './slider/slider.component';
 import { LatestBlogComponent } from './latest-blog/latest-blog.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { LatestBlogComponent } from './latest-blog/latest-blog.component';
     PostsListComponent,
     SliderComponent,
     LatestBlogComponent,
+    AboutUsComponent,
   ],
   imports: [
     BrowserModule,
