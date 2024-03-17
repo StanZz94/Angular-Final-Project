@@ -33,13 +33,13 @@
     font-weight: 700;
 }
 #header .top_header .social_icon i:hover {
-    color: #43A906;
+    color: goldenrod;
 }
 
 /*End of top header*/
 
 #header .header_menu {
-    min-height: 80px;
+    min-height: 100px;
     border-bottom: 1px solid #3D3E3D;
     z-index: 9999
 }
@@ -48,6 +48,7 @@
 }
 #header .header_menu .custom_navbar-brand {
     padding-left: 0;
+    max-width: 90px;
 }
 #header .header_menu .navbar-default {
     background-color: rgba(255, 255, 255, 0);
@@ -63,16 +64,16 @@
 }
 #header .header_menu ul.main_menu li a {
     color: #393939;
-    font-size: 14px;
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: 600;
     font-family: 'Roboto Slab', serif;
 }
 #header .header_menu ul.main_menu li a:hover {
-    color: #4DA91C;
+    color: goldenrod;
 }
 #header .header_menu ul.main_menu li.active a {
-    color: #4DA91C;
+    color: goldenrod;
 }
 #header .header_menu ul.main_menu li,
 #header .header_menu ul.main_menu li.active a {
@@ -92,5 +93,5 @@
 #header .header_menu ul.main_menu li:hover:after,
 #header .header_menu ul.main_menu li.active:after {
     width: 90%;
-    background: #4DA91C;
+    background: goldenrod;
 }

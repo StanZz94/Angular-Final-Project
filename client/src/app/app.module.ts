@@ -9,6 +9,7 @@ import { MainComponent } from './main/main.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PostsListComponent } from './posts-list/posts-list.component';
 import { SliderComponent } from './slider/slider.component';
+import { LatestBlogComponent } from './latest-blog/latest-blog.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { SliderComponent } from './slider/slider.component';
     MainComponent,
     PostsListComponent,
     SliderComponent,
+    LatestBlogComponent,
   ],
   imports: [
     BrowserModule,

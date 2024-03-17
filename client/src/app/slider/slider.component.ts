@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class SliderComponent {
   images = [
-    { src: '../assets/img/img1.jpg', alt: 'Image 1', title: 'Learn', subtitle: 'Tips and tricks in spotting treasure!', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', link: '' },
-    { src: '../assets/img/img2.jpg', alt: 'Image 2', title: 'Protect', subtitle: 'Nature the environment', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', link: '' },
-    { src: '../assets/img/img3.jpg', alt: 'Image 3', title: 'Protect', subtitle: 'Nature the environment', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', link: '' }
+    { src: 'https://cdn.pixabay.com/photo/2017/07/22/11/46/adventure-2528477_1280.jpg', alt: 'Image 1', title: 'Explore', subtitle: 'legends for ancient treasures!', description: '', link: '' },
+    { src: 'https://img.freepik.com/premium-photo/raw-gold-nugget-illustration_708697-383.jpg', alt: 'Image 2', title: 'GOLD', subtitle: 'Mining, Extracting and melting!', description: '', link: '' },
+    { src: 'https://images-na.ssl-images-amazon.com/images/S/pv-target-images/911dd2e35c60185771c9f9f39a5a29dbdad813a8ee239fc050ff9687b91773c1._RI_TTW_SX1080_FMjpg_.jpg', alt: 'Image 3', title: 'Crystals', subtitle: 'Gem Hunting, Polishing and Handcrafting', description: '', link: '' }
   ];
   currentImageIndex = 0;
 
@@ -20,7 +20,7 @@ export class SliderComponent {
   startCarousel() {
     setInterval(() => {
       this.nextImage();
-    }, 3000); // Change image every 3 seconds
+    }, 5000); // Change image every 3 seconds
   }
 
   nextImage() {
