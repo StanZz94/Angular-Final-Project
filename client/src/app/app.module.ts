@@ -11,6 +11,7 @@ import { PostsListComponent } from './posts-list/posts-list.component';
 import { SliderComponent } from './slider/slider.component';
 import { LatestBlogComponent } from './latest-blog/latest-blog.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { UserModule } from './user/user.module';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
     CoreModule,
     SharedModule,
     HttpClientModule,
+    UserModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
