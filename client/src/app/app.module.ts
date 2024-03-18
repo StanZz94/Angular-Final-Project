@@ -12,6 +12,7 @@ import { SliderComponent } from './slider/slider.component';
 import { LatestBlogComponent } from './latest-blog/latest-blog.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { UserModule } from './user/user.module';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { UserModule } from './user/user.module';
     SliderComponent,
     LatestBlogComponent,
     AboutUsComponent,
+    BlogComponent,
   ],
   imports: [
     BrowserModule,

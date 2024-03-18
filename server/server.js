@@ -1345,9 +1345,9 @@
     	posts: {
             "36a9cb75-79c2-4ad5-abf2-ba8720c1616d":{
                 "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
-                "title": "Pumpkins Trouble !",
-                "imageUrl": "https://blogs.cornell.edu/livegpath/files/2021/02/cucurbit-downy-mildew9x1200.jpg",
-                "myPost": "Guys what wrong whit my plants? From 4 days the are like that :(",
+                "title": "Gems Hunting !",
+                "imageUrl": "https://howardfenstermanminerals.com/wp-content/uploads/2021/07/Pixaby_071021_gemstone-88495_640a.jpg",
+                "myPost": "Knowing these things will help you figure out the location where a particular species of bird is likely to be found.",
                 "name": "Stanko",
                 "lastName": "Traykov",
                 "_createdOn": 1702902097841,
@@ -1355,9 +1355,9 @@
             },
             "e8a3fe81-a5d7-4312-b462-d2e6a91b4fb1":{
                 "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
-                "title": "We got Invasion! can anyone help?",
-                "imageUrl": "https://innspubnet.files.wordpress.com/2018/03/citrus-pests.png?w=714",
-                "myPost": "Our garden is attacked by many bugs. My question is how i can remove them without poisons ?",
+                "title": "Gold in Rivers",
+                "imageUrl": "https://goldseiten-forum.com/wcf/attachment/16227-p1010020-jpg/",
+                "myPost": "Hey guys, any one know good places near Varna?",
                 "name": "Peter",
                 "lastName": "Hristov",
                 "_createdOn": 1702900981191,
@@ -1365,55 +1365,24 @@
             },
             "91483680-4974-4fb7-888a-24752ca56d3e":{
                 "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
-                "title": "Tip and Tricks for outdoor seeding !",
-                "imageUrl": "https://thefreerangelife.com/wp-content/uploads/planting-seeds-outside.jpg",
+                "title": "Opals in Rila?",
+                "imageUrl": "https://zenlife.bg/wp-content/uploads/2020/03/%D0%BE%D0%BF%D0%B0%D0%BB.jpg",
                 "myPost": "As a general rule only plant a seed a deep as it is wide. This means that tiny chamomile seeds are sprinkled on the soil’s surface and pressed in, while pumpkin seeds are planted almost an inch into the soil.",
                 "name": "Stanko",
                 "lastName": "Traykov",
                 "_createdOn": 1702902317654,
                 "_id": "91483680-4974-4fb7-888a-24752ca56d3e"
             },
-            "fd0bf6f3-87bf-4cac-add0-4301cca6f6ff":{
-                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
-                "title": "Tomatoes Problem !",
-                "imageUrl": "https://www.allotment-garden.org/wp-content/uploads/2016/04/Chlorosis-Magnesium-Deficiency-Tomato.jpg",
-                "myPost": "Why are my tomato leaves turning yellow guys? Did i overwater them?",
-                "name": "Peter",
-                "lastName": "Hristov",
-                "_createdOn": 1702901564754,
-                "_id": "fd0bf6f3-87bf-4cac-add0-4301cca6f6ff"
+            "91483681-4974-4fb7-888a-24752ca56d3e":{
+                "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
+                "title": "YOOOOOOOOOOOOOOOOO",
+                "imageUrl": "https://zenlife.bg/wp-content/uploads/2020/03/%D0%BE%D0%BF%D0%B0%D0%BB.jpg",
+                "myPost": "As a general rule only plant a seed a deep as it is wide. This means that tiny chamomile seeds are sprinkled on the soil’s surface and pressed in, while pumpkin seeds are planted almost an inch into the soil.",
+                "name": "Stanko",
+                "lastName": "Traykov",
+                "_createdOn": 1702902317655,
+                "_id": "91483680-4974-4fb7-888a-24752ca56d3e"
             },
-            "e61970cf-e564-4622-802e-da25c87b6bfd":{
-                "_ownerId": "847ec027-f659-4086-8032-5173e2f9c93a",
-                "title": "Harvest time is coming!",
-                "imageUrl": "https://cdn.forumcomm.com/dims4/default/0dc877b/2147483647/strip/true/crop/3888x2592+0+0/resize/840x560!/format/webp/quality/90/?url=https%3A%2F%2Ffcc-cue-exports-brightspot.s3.us-west-2.amazonaws.com%2Fagweek%2Fbinary%2Fcopy%2F71%2F74%2F822a5d3c14696b90c3f53a10ce94%2F1863177-092012cornharvest-binary-4942144.jpg",
-                "myPost": "The time of harvest varies with each crop.\nHarvest produce at the stage for consumption.\nThe expected time for harvest is based on the time of\nplanting or transplanting.",
-                "name": "George",
-                "lastName": "Hooly",
-                "_createdOn": 1702137408370,
-                "_id": "e61970cf-e564-4622-802e-da25c87b6bfd"
-            },
-            "ae12919d-4517-4da3-8e94-27f690774977":{
-                "_ownerId": "847ec027-f659-4086-8032-5173e2f9c93a",
-                "title": "GROWING CORN",
-                "imageUrl": "https://bonnieplants.com/cdn/shop/articles/BONNIE-PLANTS_corn-iStock-857670630-2400px_1ce4b5df-20b7-433c-acde-8703235c66be.jpg?v=1642542000&width=1000",
-                "myPost": "Corn needs plenty of space for two reasons — it takes up a lot of nutrition from the soil, and it is primarily pollinated by wind. As grains of pollen are shed by the tassels that grow from the plants' tops, they must find their way to the delicate strands of silk that emerge from newly formed ears. To make sure silks are nicely showered with pollen, grow corn in blocks of short rows rather than in a long, single row. In a small garden, 15 plants set 1 foot apart can be grown in a 3 x 5-foot bed. Growing corn on this tiny scale is a good way to introduce yourself to the crop if you've never grown it. After the first year you will probably want to increase the size of the planting to at least 4 rows 10 feet long.",
-                "name": "George",
-                "lastName": "Hooly",
-                "_createdOn": 1702906097681,
-                "_id": "ae12919d-4517-4da3-8e94-27f690774977"
-            },
-            "430d279e-f28c-40d8-93df-4e294f24a855":{
-                "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
-                "title": "How to Grow Onions",
-                "imageUrl": "https://bonnieplants.com/cdn/shop/articles/BONNIE_onions_iStock-892022394-1800px_cf21330f-cbf5-4e85-8212-15855474e8a6.jpg?v=1642541973&width=1000",
-                "myPost": "Growing onions is simple: If you can poke a hole into the ground, you can grow an onion from a little plant. Most of our onion varieties are sold as little seedlings in bare-root bundles; each plant will start growing within days after you plant. If you can't plant your onions right away, remove their bindings and place them in a bucket with 2 inches of moist soil in the bottom. Keep them in a cool, bright place but out of direct sun until you are ready to plant. A sunny basement is ideal.",
-                "name": "Peter",
-                "lastName": "Hristov",
-                "_createdOn": 1702906294941,
-                "_id": "430d279e-f28c-40d8-93df-4e294f24a855"
-            },
-            
     	},
     	comments: {
     	},
