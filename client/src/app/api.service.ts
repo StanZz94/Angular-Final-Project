@@ -16,16 +16,5 @@ export class ApiService {
     return this.http.get<Post[]>(`${apiUrl}/posts`);
   }
 
-  getLatestsPosts(){
-    const { apiUrl } = environment;
-
-    console.log(this.http.get<Post[]>(`${apiUrl}/posts`).subscribe((value) =>{
-      console.log(value);
-      
-    }));
-    
-    return this.http.get<Post[]>(`${apiUrl}/posts?_limit=3&_sort=id&_order=desc`)
-  }
-
   getComments() {}
 }

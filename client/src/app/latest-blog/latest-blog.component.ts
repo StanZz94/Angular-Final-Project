@@ -13,11 +13,11 @@ export class LatestBlogComponent implements OnInit {
   constructor(private api: ApiService) {}
 
   ngOnInit(): void {
-    this.getLatestsPosts();
+    this.getLatestPosts();
   }
 
-  getLatestsPosts(): void {
-    this.api.getLatestsPosts()
+  getLatestPosts(): void {
+    this.api.getPosts()
       .subscribe(posts => {
         this.latestPosts = posts.slice(0, 3);
       });

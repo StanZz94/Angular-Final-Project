@@ -7,7 +7,7 @@ export interface Post {
     myPost: string;
     name: string;
     lastName: string;
-    comments: string[];
+    comments: [];
     _createdOn: number;
     _id: string;
 }
