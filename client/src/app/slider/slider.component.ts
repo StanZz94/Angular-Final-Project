@@ -20,7 +20,7 @@ export class SliderComponent {
   startCarousel() {
     setInterval(() => {
       this.nextImage();
-    }, 5000); // Change image every 3 seconds
+    }, 3500);
   }
 
   nextImage() {
