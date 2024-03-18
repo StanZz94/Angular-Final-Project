@@ -1,14 +1,19 @@
-<div class="login-container">
-    <h2>Login</h2>
-    <form>
-      <div class="form-group">
-        <label for="username">Username</label>
-        <input type="email" id="email" name="email" class="form-control" required>
-      </div>
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" class="form-control" required>
-      </div>
-      <button type="submit" class="btn btn-primary">Login</button>
+<h1>Login</h1>
+<div class="login-content">
+    <form class=" col-md-8">
+
+        <div class="form-group">
+            <label for="inputAddress">E-mail:</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="example@gmail.com">
+        </div>
+
+        <div class="form-group">
+            <label for="inputPassword">Password:</label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="At least 4 characters">
+        </div>
+
+        <button type="submit">Sign in</button>
+
+        <h4>Dont have account? <a routerLink="/register">Register here!</a></h4>
     </form>
-  </div>
+</div>

@@ -880,65 +880,6 @@ div#market-place {
 
 /*Contact*/
 
-#contact {
-    min-height: 650px;
-    background: #eeeeee;
-    padding: 80px 0;
-}
-
-.msg {
-    padding-top: 50px;
-}
-input#name,
-input#email {
-
-    margin-bottom: 10px !important;
-}
-
-.text_area textarea {
-    resize: none;
-    width: 555px;
-}
-.text_area textarea,
-.form-inline .form-control,
-input#name,
-input#email,
-input#subject{
-    border-radius: 0px;
-    margin-bottom: 20px;
-    border: 0px;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    background: #d4d4d4;
-    font-style: italic;
-    color: #696969;
-    font-family: 'Open Sans', sans-serif;
-}
-li.fw-flash-message {
-    color: red;
-    font-size: 4rem;
-}
-.msg_title h5 {
-    font-size: 22px;
-    text-transform: uppercase;
-    font-weight: 400;
-    padding-bottom: 20px;
-    font-family: 'Roboto Slab', serif;
-    color: #222222;
-}
-.custom-btn {
-    padding: 13px 82px;
-    background: #43a906;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 700;
-    border: 0px;
-    border-radius: 2px;
-    letter-spacing: 5px;
-    font-size: 14px;
-    font-family: 'Roboto Slab', serif;
-    outline: 0 !important;
-}
 .office {
     padding-top: 50px
 }

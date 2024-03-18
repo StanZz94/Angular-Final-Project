@@ -1,28 +1,22 @@
-/* Footer */
+
+/*Footer*/
+
 #footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
     min-height: 70px;
     background: #222222;
     color: #fff;
 }
-
 #footer .copyright,
 #footer .designer {
     padding-top: 25px;
     font-size: 14px;
 }
-
 #footer .copyright p {
     text-align: left;
 }
-
 #footer .designer p {
     text-align: right;
 }
-
 #footer .copyright p,
 #footer .copyright p span a,
 #footer .designer p,
