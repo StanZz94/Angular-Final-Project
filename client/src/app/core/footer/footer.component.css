@@ -12,10 +12,10 @@
     font-size: 14px;
 }
 #footer .copyright p {
-    text-align: left;
+    text-align: right;
 }
 #footer .designer p {
-    text-align: right;
+    text-align: left;
 }
 #footer .copyright p,
 #footer .copyright p span a,
