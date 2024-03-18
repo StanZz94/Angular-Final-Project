@@ -7,9 +7,8 @@ import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
 import { MainComponent } from './main/main.component';
 import { HttpClientModule } from '@angular/common/http';
-import { PostsListComponent } from './posts-list/posts-list.component';
 import { SliderComponent } from './slider/slider.component';
-import { LatestBlogComponent } from './latest-blog/latest-blog.component';
+import { LatestBlogComponent } from './main/latest-blog/latest-blog.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { UserModule } from './user/user.module';
 import { BlogComponent } from './blog/blog.component';
@@ -18,7 +17,6 @@ import { BlogComponent } from './blog/blog.component';
   declarations: [
     AppComponent,
     MainComponent,
-    PostsListComponent,
     SliderComponent,
     LatestBlogComponent,
     AboutUsComponent,
