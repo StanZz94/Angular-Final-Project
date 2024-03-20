@@ -69,7 +69,20 @@
     font-weight: 600;
     font-family: 'Roboto Slab', serif;
 }
+
+#header .header_menu ul.main_menu li p {
+    font-size: 1.2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 0.2em;
+}
+
+#header .header_menu ul.main_menu li p {
+    border: none;
+}
+
 #header .header_menu ul.main_menu li a:hover {
+    cursor: pointer;
     color: goldenrod;
 }
 #header .header_menu ul.main_menu li.active a {
