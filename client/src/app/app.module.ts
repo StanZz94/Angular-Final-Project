@@ -27,11 +27,11 @@ import { BlogComponent } from './blog/blog.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     CoreModule,
     SharedModule,
     HttpClientModule,
     UserModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
