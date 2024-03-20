@@ -1366,7 +1366,7 @@
             "91483680-4974-4fb7-888a-24752ca56d3e":{
                 "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
                 "title": "Opals in Rila?",
-                "imageUrl": "https://zenlife.bg/wp-content/uploads/2020/03/%D0%BE%D0%BF%D0%B0%D0%BB.jpg",
+                "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/93/Opal_from_Yowah%2C_Queensland%2C_Australia_2.jpg",
                 "myPost": "As a general rule only plant a seed a deep as it is wide. This means that tiny chamomile seeds are sprinkled on the soil’s surface and pressed in, while pumpkin seeds are planted almost an inch into the soil.",
                 "name": "Stanko",
                 "lastName": "Traykov",
@@ -1375,8 +1375,8 @@
             },
             "91483681-4974-4fb7-888a-24752ca56d3e":{
                 "_ownerId": "60f0cf0b-34b0-4abd-9769-8c42f830dffc",
-                "title": "YOOOOOOOOOOOOOOOOO",
-                "imageUrl": "https://zenlife.bg/wp-content/uploads/2020/03/%D0%BE%D0%BF%D0%B0%D0%BB.jpg",
+                "title": "RARE TREASURE",
+                "imageUrl": "https://www.rilatravel.com/wp-content/uploads/2023/02/Golden-Treasures-4.png",
                 "myPost": "As a general rule only plant a seed a deep as it is wide. This means that tiny chamomile seeds are sprinkled on the soil’s surface and pressed in, while pumpkin seeds are planted almost an inch into the soil.",
                 "name": "Stanko",
                 "lastName": "Traykov",

@@ -24,12 +24,11 @@
     font-family: 'Open Sans', sans-serif;
 }
 #blog .single_blog_item {
-    border: 1px solid #d1d3d1;
-    border-radius: 7px;
+    border: 3px solid #d1d3d1;
 }
 #blog .blog_content {
     padding: 15px;
-    height: 165px;
+    height: 145px;
 }
 #blog .blog_content h3 {
     font-size: 22px;
@@ -85,4 +84,39 @@
 }
 #blog a.blog_link:hover {
     color:goldenrod;
+}
+
+h1 {
+    margin: 1.8em;
+    text-align: center;
+    font-weight: bolder;
+}
+
+h1 a {
+    color: black;
+    font-weight: bolder;
+}
+h1 a:hover {
+    color: goldenrod;
+    border-bottom: 3px solid goldenrod;
+}
+
+.blog_link {
+    border: 1px solid goldenrod;
+    border-radius: 7px;
+    background-color: goldenrod;
+    padding: 0.5em;
+}
+
+.blog_link span {
+    color: black;
+    font-weight: bold;
+}
+
+.blog_link span:hover {
+   
+    color: white;
+}
+.element {
+    margin-bottom: 45px;
 }

@@ -2,10 +2,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './main/main.component';
 import { BlogComponent } from './blog/blog.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 const routes: Routes = [
-  {path: '', component: MainComponent},
+  {path: '', pathMatch: "full", redirectTo: '/home'},
+  {path: 'home', component: MainComponent},
   {path: 'blog', component: BlogComponent},
+  {path: '**', redirectTo: '/404'},
+  {path: '404', component: ErrorPageComponent},
 ];
 
 @NgModule({
