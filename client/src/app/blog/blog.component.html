@@ -3,14 +3,14 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="latest_blog text-center">
-                    <h2>latest blog</h2>
-                    <p>Learn tips and good practices from aour professionals!</p>
+                    <h2>From our Blog</h2>
+                    <p>Learn tips and good practices from our professionals!</p>
                 </div>
             </div>
         </div>
         <!--End of row-->
         <div *ngIf="isLoading"><app-loader /></div>
-        <div class="row">
+        <div class="row" *ngIf="!isLoading">
             <div class="col-md-4 element" *ngFor="let post of latestPosts">
                 <div class="blog_news">
                     <div class="single_blog_item">

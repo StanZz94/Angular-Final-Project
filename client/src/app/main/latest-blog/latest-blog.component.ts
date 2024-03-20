@@ -9,7 +9,8 @@ import { UserService } from 'src/app/user/user.service';
   styleUrls: ['./latest-blog.component.css']
 })
 export class LatestBlogComponent implements OnInit {
-  latestPosts: Post[] = [];
+  latestPosts: Post[] | null = null;
+  isLoading: boolean = true;
 
   constructor(private api: ApiService, private userService: UserService) {}
 
@@ -25,6 +26,11 @@ export class LatestBlogComponent implements OnInit {
     this.api.getPosts()
       .subscribe(posts => {
         this.latestPosts = posts.slice(0, 3);
+
+        setTimeout(() => {
+          this.isLoading = false;
+        }, 1500);
+      
       });
   }
 

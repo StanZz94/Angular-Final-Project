@@ -21,7 +21,11 @@ export class BlogComponent {
     this.api.getPosts()
       .subscribe(posts => {
         this.latestPosts = posts;
-        this.isLoading = false;
+
+        setTimeout(() => {
+          this.isLoading = false;
+        }, 1500);
+      
       });
   }
 }
