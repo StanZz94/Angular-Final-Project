@@ -8,7 +8,8 @@ import { ApiService } from '../api.service';
   styleUrls: ['./blog.component.css']
 })
 export class BlogComponent {
-  latestPosts: Post[] = [];
+  latestPosts: Post[] | null = null;
+  isLoading: boolean = true;
 
   constructor(private api: ApiService) {}
 
@@ -20,6 +21,7 @@ export class BlogComponent {
     this.api.getPosts()
       .subscribe(posts => {
         this.latestPosts = posts;
+        this.isLoading = false;
       });
   }
 }

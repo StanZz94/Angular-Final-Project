@@ -9,6 +9,7 @@
             </div>
         </div>
         <!--End of row-->
+        <div *ngIf="isLoading"><app-loader /></div>
         <div class="row">
             <div class="col-md-4 element" *ngFor="let post of latestPosts">
                 <div class="blog_news">
