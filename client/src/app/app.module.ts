@@ -14,6 +14,7 @@ import { LatestBlogComponent } from './main/latest-blog/latest-blog.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { UserModule } from './user/user.module';
 import { BlogComponent } from './blog/blog.component';
+import { PostRoutingModule } from './posts/post-routing.module';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { BlogComponent } from './blog/blog.component';
     SharedModule,
     HttpClientModule,
     UserModule,
+    PostRoutingModule,
     AppRoutingModule,
   ],
   providers: [],
