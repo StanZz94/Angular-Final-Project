@@ -1,20 +1,52 @@
 <div class="responsive-container-block bigContainer">
     <div class="responsive-container-block Container">
-    
-        <div class="about">
-            <p class="text-blk heading">
-                {{post.title}}
-            </p>
-        </div>
 
       <div class="imgContainer">
         <img class="mainImg" src="{{post.imageUrl}}">
       </div>
+      <div class="about">
+        <p class="text-blk heading">
+            {{post.title}}
+        </p>
+    </div>
       <div class="responsive-container-block textSide">
-        <p class="text-blk subHeading">Author: {{post.name}}</p>
+        <p class="text-blk subHeading">Author: {{post.name}} {{post.lastName}}</p>
         <p class="text-blk subHeading">
             {{post.myPost}}
         </p>
       </div>
+
+      <div>
+        <h1>Comments:</h1>
+        <h3>There are no comments!</h3>
+        <div class="comment" *ngFor="let comment of post.comments">
+          <h4>Name: <span>{{post._ownerId.name}} {{post._ownerId.lastName}}</span></h4>
+          <a>X</a>
+          <hr class="hrr"/>
+          <p>{{comment}}</p>
+        </div>
+
+        <div>
+          <div class="comment">
+            <h4>Name: <span>Stanko Traykov</span></h4>
+            <a>X</a>
+            <hr class="hrr"/>
+            <p>Ty this weekend i will try my luck!</p>
+          </div>
+      </div>
+
+<div class="login-content">
+  <h1>Add Comment:</h1>
+    <form class=" col-md-10">
+        <div class="form-group">
+            <textarea name="textArea" id="inputTextArea" class="form-control" type="textArea" cols="30" rows="13" placeholder="" #textareaMyComment></textarea>
+        </div>
+        <button>Add comment</button>
+    </form>
     </div>
+
+    <div>
+
+    </div>
+    
   </div>

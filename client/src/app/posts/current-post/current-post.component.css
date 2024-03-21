@@ -3,6 +3,114 @@
 * {
     font-family: Nunito, sans-serif;
   }
+
+  .login-content {
+    border: 2px solid goldenrod;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 60px;
+    width: 880px;
+    background-color: #ffd29d;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 10px;
+  }
+  
+  h1{
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: 'Roboto Slab', serif;
+  }
+
+  h3{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  textarea {
+    resize: none;
+    margin: 5px;
+  }
+  
+  label {
+    font-size: 1.4em;
+    margin-left: 10px;
+    margin-top: 10px
+  }
+  
+  button {
+    color: goldenrod;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 1.5em;
+    font-weight: bolder;
+  }
+  
+  button:hover {
+    color: white;
+    background-color: goldenrod;
+  }
+  
+  .comment {
+    background-color: #ffd29d;
+    width: 100%;
+    border: 3px solid goldenrod;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0 30px;
+    position: relative;
+  }
+
+  .comment a {
+    background-color: red;
+    color:azure;
+    font-weight: bolder;
+    font-size: 1em;
+    border-radius: 2em;
+    margin: 0.5em;
+    padding: 0.1em 0.5em;
+    cursor: pointer;
+    float: right;
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em; 
+  }
+
+  .comment a:hover {
+    color: black;
+  }
+
+  .comment p {
+    font-size: 1.3em;
+    margin: 1em 0;
+    font-weight: bold;
+  }
+
+  .comment h4 {
+    font-weight: 700;
+  }
+
+  .comment h4 span {
+    font-size: 1.2em;
+  }
+
+  .hrr {
+    height: 3px;
+    background-color: goldenrod;
+    border: none;
+  }
   
   .text-blk {
     margin-top: 0px;
@@ -49,7 +157,7 @@
   }
   
   .responsive-container-block.Container {
-    max-width: 1320px;
+    max-width: 1930px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -65,12 +173,14 @@
     margin-right: auto;
     margin-bottom: 0px;
     margin-left: auto;
+    width: 1900px
   }
 
   .mainImg {
     width: 100%;
-    height: 400px;
+    height: 500px;
     object-fit: cover;
+    border-radius: 1em;
   }
   
 
@@ -90,11 +200,12 @@
   }
   
   .text-blk.heading {
-    font-size: 36px;
+    font-size: 32px;
     line-height: 40px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 90px;
+    margin-top: 30px;
+
   }
   
   .text-blk.subHeading {
@@ -102,12 +213,13 @@
     line-height: 26px;
     margin-top: 0px;
     margin-right: 0px;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
     margin-left: 0px;
+    font-size: 1.5em;
   }
   
   #ixvck {
-    margin-top: 60px;
+    margin-top: 30px;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
@@ -150,9 +262,7 @@
       width: 70%;
     }
   
-    .responsive-container-block.Container {
-      flex-direction: column-reverse;
-    }
+  
   
     .imgContainer {
       position: relative;
@@ -171,13 +281,7 @@
       width: 100%;
     }
   
-    .responsive-container-block.Container {
-      flex-direction: row-reverse;
-    }
   
-    .responsive-container-block.Container {
-      flex-direction: column-reverse;
-    }
   }
   
   @media (max-width: 768px) {
@@ -190,7 +294,7 @@
   
     .text-blk.subHeading {
       text-align: center;
-      font-size: 17px;
+      font-size: 24px;
       max-width: 520px;
     }
   
