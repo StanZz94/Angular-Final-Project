@@ -20,11 +20,15 @@ export class ApiService {
     const { apiUrl } = environment;
     return this.http.get<Post>(`${apiUrl}/posts/${id}`);
   }
-  
+
   createPost(title: string, imageUrl: string, myPost: string) {
     const { apiUrl } = environment;
     return this.http.post<Post>(`${apiUrl}/posts` , {title, imageUrl, myPost}).subscribe();
   }
 
-  getComments() {}
+  getComments() {
+    const { apiUrl } = environment;
+
+    return this.http.get<Comment>(`${apiUrl}/comments`)
+  }
 }
