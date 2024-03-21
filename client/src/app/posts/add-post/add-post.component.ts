@@ -13,6 +13,6 @@ export class AddPostComponent {
   addNewPost(event: Event, title: string, imageUrl: string, myPost: string ) {
     event.preventDefault();
     this.apiService.createPost(title, imageUrl, myPost);
-    //this.router.navigate(['/blog']);
+    this.router.navigate(['/blog']);
   }
 }

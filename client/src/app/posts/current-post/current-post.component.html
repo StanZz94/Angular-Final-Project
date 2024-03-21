@@ -3,17 +3,17 @@
     
         <div class="about">
             <p class="text-blk heading">
-                Welcome to Treasure Hunt, where stories become treasures!
+                {{post.title}}
             </p>
         </div>
 
       <div class="imgContainer">
-        <img class="mainImg" src="https://t3.ftcdn.net/jpg/05/77/61/22/360_F_577612222_WPfg2gxPwmHsO616kF1eMJsFr7wVOLOA.jpg">
+        <img class="mainImg" src="{{post.imageUrl}}">
       </div>
       <div class="responsive-container-block textSide">
-        <p class="text-blk subHeading">Author:</p>
+        <p class="text-blk subHeading">Author: {{post.name}}</p>
         <p class="text-blk subHeading">
-            At Treasure Hunt, we believe that every experience is a gem waiting to be discovered and shared. Our platform is more than just a blog, it's a vibrant community where adventurers, explorers, and storytellers come together to share their journeys, their insights and their passions.
+            {{post.myPost}}
         </p>
       </div>
     </div>
