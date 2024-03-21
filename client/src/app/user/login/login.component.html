@@ -6,7 +6,7 @@
             <label for="inputAddress">E-mail:</label>
             <input type="email" name="email" ngModel #inputEmail="ngModel" required class="form-control" id="inputEmail" placeholder="example@gmail.com">
             <ng-container *ngIf="inputEmail.touched">
-                <p class="error" *ngIf="inputEmail.errors?.['required']"> Email is required!</p>
+                <p class="error" *ngIf="inputEmail.errors?.['required']"> Email adress is required!</p>
             </ng-container>
         </div>
 

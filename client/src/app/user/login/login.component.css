@@ -13,6 +13,12 @@
   border-radius: 10px;
 }
 
+.error {
+  margin: 0.6em;
+  color:red;
+  font-weight: bolder;
+}
+
 h1{
   text-align: center;
   margin-top: 40px;
