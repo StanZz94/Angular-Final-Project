@@ -7,7 +7,7 @@
             <input type="email" 
             name="email" 
             ngModel 
-            [appEmail]="['hello', 'directive']"
+            [appEmail]="['']"
             #inputEmail="ngModel" 
             required class="form-control" 
             id="inputEmail"
@@ -20,8 +20,13 @@
 
         <div class="form-group">
             <label for="inputPassword">Password:</label>
-            <input type="password" name="password" ngModel #inputPassword="ngModel" required class="form-control"
+            <input type="password" name="password" minlength="5" ngModel #inputPassword="ngModel" required class="form-control"
                 id="inputPassword" placeholder="At least 4 characters">
+            
+                <ng-container *ngIf="inputPassword.touched">
+                    <p class="error" *ngIf="inputPassword.errors?.['required']"> Password is required !</p>
+                    <p class="error" *ngIf="inputPassword.errors?.['minlength']">Password must be at least 5 characters !</p>
+                </ng-container>
         </div>
 
         <button>Sign in</button>
