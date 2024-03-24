@@ -21,7 +21,7 @@
         <div class="form-group">
             <label for="inputPassword">Password:</label>
             <input type="password" name="password" minlength="5" ngModel #inputPassword="ngModel" required class="form-control"
-                id="inputPassword" placeholder="At least 4 characters">
+                id="inputPassword" placeholder="*****">
             
                 <ng-container *ngIf="inputPassword.touched">
                     <p class="error" *ngIf="inputPassword.errors?.['required']"> Password is required !</p>
@@ -29,7 +29,7 @@
                 </ng-container>
         </div>
 
-        <button>Sign in</button>
+        <button [disabled]="form.invalid" [style]="{ backgroundColor: form.invalid ? 'gray' : ''}">Sign in</button>
 
         <h4>Dont have account? <a routerLink="/register">Register here!</a></h4>
     </form>

@@ -3,7 +3,7 @@ import { User } from "./user";
 
 export interface Comment {
     _ownerId: User;
-    _postId: Post
+    _postId: Post;
     myComment: string;
     _id: string;
 }
