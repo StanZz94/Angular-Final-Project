@@ -23,11 +23,11 @@
         <div class="form-group">
             <label for="textarea">Post text:</label>
             <textarea name="textarea" formControlName="textarea"name="textarea" minlength="10" formControlName="textarea" id="textarea" class="form-control" type="textarea" cols="30" rows="10" placeholder="Enter your post here!" required></textarea>
-            <ng-container *ngIf="form.get('textarea')?.touched">
-                <p class="error" *ngIf="form.get('textarea')?.errors?.['required']">Cant send empthy post !</p>
-                <p class="error" *ngIf="form.get('textarea')?.errors?.['minlength']">Post must be at least 10 characters !</p>
-            </ng-container>
         </div>
+        <ng-container *ngIf="form.get('textarea')?.touched">
+            <p class="error" *ngIf="form.get('textarea')?.errors?.['required']">Post text is required !</p>
+            <p class="error" *ngIf="form.get('textarea')?.errors?.['minlength']">Post text must be at least 10 characters !</p>
+        </ng-container>
 
         <button>Post</button>
     </form>

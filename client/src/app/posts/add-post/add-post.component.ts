@@ -14,7 +14,7 @@ export class AddPostComponent {
   form = this.fb.group({
     title: ['', [Validators.required, Validators.minLength(5)]],
     imageUrl: ['', [Validators.required, imageValidator()]],
-    myPost: ['', [Validators.required, Validators.minLength(10)]],
+    textarea: ['', [Validators.required, Validators.minLength(10)]],
   })
 
   addNewPost(): void {
