@@ -1,22 +1,34 @@
 <h1>Create Post</h1>
 <div class="login-content">
-    <form class=" col-md-8">
+    <form class=" col-md-8" [formGroup]="form" (ngSubmit)="addNewPost()">
 
         <div class="form-group">
             <label for="inputAddress">Title:</label>
-            <input type="text" class="form-control" id="inputPostTitle" placeholder="" #inputTitle>
+            <input type="text" formControlName="title" name="title" minlength="5" class="form-control" id="title" placeholder="Post title!" required>
         </div>
+        <ng-container *ngIf="form.get('title')?.touched">
+            <p class="error" *ngIf="form.get('title')?.errors?.['required']">Title is required !</p>
+            <p class="error" *ngIf="form.get('title')?.errors?.['minlength']">Title must be at least 5 characters !</p>
+        </ng-container>
 
         <div class="form-group">
-            <label for="inputImageUrl">Image URL:</label>
-            <input type="text" class="form-control" id="inputImageUrl" placeholder="" #inputImageUrl>
+            <label for="imageUrl">Image URL:</label>
+            <input type="text" formControlName="imageUrl" name="imageUrl" class="form-control" id="imageUrl" placeholder="Image Url!" required>
         </div>
+        <ng-container *ngIf="form.get('imageUrl')?.touched">
+            <p class="error" *ngIf="form.get('imageUrl')?.errors?.['required']"> Image url is required !</p>
+            <p class="error" *ngIf="form.get('imageUrl')?.errors?.['imageValidator']"> Image url is invalid !</p>
+        </ng-container>
 
         <div class="form-group">
-            <label for="inputTextArea">Post text:</label>
-            <textarea name="textArea" id="inputTextArea" class="form-control" type="textArea" cols="30" rows="10" placeholder="" #textareaMyPost></textarea>
+            <label for="textarea">Post text:</label>
+            <textarea name="textarea" formControlName="textarea"name="textarea" minlength="10" formControlName="textarea" id="textarea" class="form-control" type="textarea" cols="30" rows="10" placeholder="Enter your post here!" required></textarea>
+            <ng-container *ngIf="form.get('textarea')?.touched">
+                <p class="error" *ngIf="form.get('textarea')?.errors?.['required']">Cant send empthy post !</p>
+                <p class="error" *ngIf="form.get('textarea')?.errors?.['minlength']">Post must be at least 10 characters !</p>
+            </ng-container>
         </div>
 
-        <button (click)="addNewPost($event, inputTitle.value, inputImageUrl.value, textareaMyPost.value)">Post</button>
+        <button>Post</button>
     </form>
 </div>

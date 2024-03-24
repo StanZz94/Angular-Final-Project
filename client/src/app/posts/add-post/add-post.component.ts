@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { ApiService } from 'src/app/api.service';
+import { imageValidator } from 'src/app/shared/utils/image-validator';
 
 @Component({
   selector: 'app-add-post',
@@ -8,11 +9,19 @@ import { ApiService } from 'src/app/api.service';
   styleUrls: ['./add-post.component.css']
 })
 export class AddPostComponent {
-  constructor(private apiService: ApiService, private router: Router) {}
+  constructor(private fb: FormBuilder, private router: Router) {}
+  
+  form = this.fb.group({
+    title: ['', [Validators.required, Validators.minLength(5)]],
+    imageUrl: ['', [Validators.required, imageValidator()]],
+    myPost: ['', [Validators.required, Validators.minLength(10)]],
+  })
 
-  addNewPost(event: Event, title: string, imageUrl: string, myPost: string ) {
-    event.preventDefault();
-    this.apiService.createPost(title, imageUrl, myPost);
-    this.router.navigate(['/blog']);
+  addNewPost(): void {
+    if(this.form.invalid){
+      return;
+    }
+    console.log(this.form.value)
+    //this.router.navigate(['/blog']);
   }
 }

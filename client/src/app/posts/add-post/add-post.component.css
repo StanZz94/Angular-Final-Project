@@ -12,6 +12,12 @@
     padding-bottom: 40px;
     border-radius: 10px;
   }
+
+  .error {
+    margin-left: 0.6em;
+    color:red;
+    font-weight: bolder;
+  }
   
   h1{
     text-align: center;

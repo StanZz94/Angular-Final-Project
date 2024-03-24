@@ -15,6 +15,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { UserModule } from './user/user.module';
 import { BlogComponent } from './blog/blog.component';
 import { PostRoutingModule } from './posts/post-routing.module';
+import { AddPostComponent } from './posts/add-post/add-post.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,7 @@ import { PostRoutingModule } from './posts/post-routing.module';
     MainComponent,
     SliderComponent,
     LatestBlogComponent,
+    AddPostComponent,
     AboutUsComponent,
     BlogComponent,
     ErrorPageComponent,
@@ -34,6 +37,8 @@ import { PostRoutingModule } from './posts/post-routing.module';
     UserModule,
     PostRoutingModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
