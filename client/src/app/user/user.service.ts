@@ -10,27 +10,37 @@ export class UserService {
   user: UserAuth | undefined;
   USER_KEY = '[user]'
 
-  get isLogged():boolean {
+  get isLogged(): boolean {
     return !!this.user;
   }
 
   constructor(private http: HttpClient) {
 
-    try{
+    try {
       const lsUser = localStorage.getItem(this.USER_KEY) || '';
       this.user = JSON.parse(lsUser);
     } catch (err) {
       this.user = undefined;
     }
-   }
+  }
 
-   login(email: string, password: string) {
+  register(
+    name: string,
+    lastName: string,
+    email: string,
+    password: string,
+    repeatPassword: string,
+  ) {
+    return this.http.post('/data/register', {name, lastName, email, password, repeatPassword });
+  }
 
-    return this.http.post('/data/login', {email, password});
-   }
+  login(email: string, password: string) {
 
-   logout() {
+    return this.http.post('/data/login', { email, password });
+  }
+
+  logout() {
     this.user = undefined;
     localStorage.removeItem(this.USER_KEY);
-   }
+  }
 }
