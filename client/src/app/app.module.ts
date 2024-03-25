@@ -17,6 +17,7 @@ import { BlogComponent } from './blog/blog.component';
 import { PostRoutingModule } from './posts/post-routing.module';
 import { AddPostComponent } from './posts/add-post/add-post.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { appInterceptorProvider } from './app.interceprot';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [appInterceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
