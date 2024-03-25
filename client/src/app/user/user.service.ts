@@ -31,12 +31,13 @@ export class UserService {
     password: string,
     repeatPassword: string,
   ) {
-    return this.http.post('/data/register', {name, lastName, email, password, repeatPassword });
+    console.log({ name, lastName, email, password, repeatPassword })
+    return this.http.post<UserAuth>('/users/register', {  name, lastName, email, password, repeatPassword });
   }
 
   login(email: string, password: string) {
 
-    return this.http.post('/data/login', { email, password });
+    return this.http.post<UserAuth>('/users/login', { email, password });
   }
 
   logout() {

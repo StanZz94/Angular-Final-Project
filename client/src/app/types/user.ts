@@ -15,4 +15,5 @@ export interface UserAuth {
     lastName: string;
     email: string;
     password: string;
+    id: string;
 }

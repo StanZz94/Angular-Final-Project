@@ -3,18 +3,20 @@ import { Injectable, Provider } from "@angular/core";
 import { Observable } from "rxjs";
 import { environment } from "src/environments/environment.development";
 
-const { apiUrl } = environment;
+const { usersUrl } = environment;
 
 @Injectable()
 class AppInterceptor implements HttpInterceptor {
-    API = '/data'
+    API = '/users'
     intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
         if(req.url.startsWith(this.API)){
             req = req.clone({
-                url: req.url.replace(this.API, apiUrl),
+                url: req.url.replace(this.API, usersUrl),
                 withCredentials: true,
             });
         }
+        console.log(req)
+        console.log(req.url)
         return next.handle(req);
     }
 }
