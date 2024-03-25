@@ -84,7 +84,11 @@
 
             let status = 200;
             let headers = {
-                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Origin': 'http://localhost:4200',
+                'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+                'Access-Control-Allow-Credentials': true,
+                'Access-Control-Max-Age': '86400',
+                'Access-Control-Allow-Headers': 'Content-Type, Authorization',
                 'Content-Type': 'application/json'
             };
             let result = '';
@@ -94,7 +98,7 @@
             if (method == 'OPTIONS') {
                 Object.assign(headers, {
                     'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
-                    'Access-Control-Allow-Credentials': false,
+                    'Access-Control-Allow-Credentials': true,
                     'Access-Control-Max-Age': '86400',
                     'Access-Control-Allow-Headers': 'X-Requested-With, X-HTTP-Method-Override, Content-Type, Accept, X-Authorization, X-Admin'
                 });
