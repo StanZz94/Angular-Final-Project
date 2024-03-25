@@ -41,7 +41,6 @@ export class UserService {
   }
 
   logout() {
-    this.user = undefined;
-    localStorage.removeItem(this.USER_KEY);
+    return this.http.get('/users/logout', {})
   }
 }
