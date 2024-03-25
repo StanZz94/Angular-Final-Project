@@ -45,7 +45,7 @@ export class UserService implements OnDestroy{
   }
 
   logout() {
-    return this.http.get('/users/logout', {}).pipe(
+    return this.http.post('/users/logout', {}).pipe(
       tap(()=>this.user$$.next(undefined))
     );
   }
