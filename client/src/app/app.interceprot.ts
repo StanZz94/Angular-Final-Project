@@ -7,7 +7,7 @@ const { usersUrl } = environment;
 
 @Injectable()
 class AppInterceptor implements HttpInterceptor {
-    API = '/users'
+    API = '/api'
     intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
         if(req.url.startsWith(this.API)){
             req = req.clone({

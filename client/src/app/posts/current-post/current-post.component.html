@@ -20,10 +20,10 @@
         <h1>Comments:</h1>
         <h3>There are no comments!</h3>
         <div class="comment" *ngFor="let comment of post.comments">
-          <h4>Name: <span>{{post._ownerId.name}} {{post._ownerId.lastName}}</span></h4>
+          <h4>Name: <span>{{comments._ownerId.name}} {{comments._ownerId.lastName}}</span></h4>
           <a>X</a>
           <hr class="hrr"/>
-          <p></p>
+          <p>{{comments.myComment}}</p>
         </div>
 
         <div>

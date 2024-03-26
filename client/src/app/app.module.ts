@@ -18,6 +18,7 @@ import { AddPostComponent } from './posts/add-post/add-post.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { appInterceptorProvider } from './app.interceprot';
 import { AuthenticationComponent } from './authentication/authentication.component';
+import { PostsModule } from './posts/posts.module';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { AuthenticationComponent } from './authentication/authentication.compone
     AuthenticationComponent,
   ],
   imports: [
+    PostsModule,
     BrowserModule,
     CoreModule,
     SharedModule,

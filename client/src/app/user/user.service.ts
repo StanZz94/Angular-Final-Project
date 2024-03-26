@@ -26,7 +26,7 @@ export class UserService implements OnDestroy{
 
   getUser() {
     console.log(this.user)
-    return this.http.get<UserAuth>(`/users/${this.user?.id}`)
+    return this.http.get<UserAuth>(`/api/users/profile`)
     .pipe(tap((user) => this.user$$.next(user)));
   }
 
@@ -37,21 +37,20 @@ export class UserService implements OnDestroy{
     password: string,
     repeatPassword: string,
   ) {
-    console.log({ name, lastName, email, password, repeatPassword })
-    return this.http.post<UserAuth>('/users/register', {  name, lastName, email, password, repeatPassword }).pipe(
+    return this.http.post<UserAuth>('/api/register', {  name, lastName, email, password, repeatPassword }).pipe(
       tap((user)=>this.user$$.next(user))
     );
   }
 
   login(email: string, password: string) {
 
-    return this.http.post<UserAuth>('/users/login', { email, password }).pipe(
+    return this.http.post<UserAuth>('/api/login', { email, password }).pipe(
       tap((user)=>this.user$$.next(user))
     );
   }
 
   logout() {
-    return this.http.post('/users/logout', {}).pipe(
+    return this.http.post('/api/logout', {}).pipe(
       tap(()=>this.user$$.next(undefined))
     );
   }
