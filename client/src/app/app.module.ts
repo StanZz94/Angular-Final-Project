@@ -17,6 +17,7 @@ import { PostRoutingModule } from './posts/post-routing.module';
 import { AddPostComponent } from './posts/add-post/add-post.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { appInterceptorProvider } from './app.interceprot';
+import { AuthenticationComponent } from './authentication/authentication.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { appInterceptorProvider } from './app.interceprot';
     AboutUsComponent,
     BlogComponent,
     ErrorPageComponent,
+    AuthenticationComponent,
   ],
   imports: [
     BrowserModule,

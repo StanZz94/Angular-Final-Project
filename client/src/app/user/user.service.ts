@@ -24,6 +24,12 @@ export class UserService implements OnDestroy{
     })
   }
 
+  getUser() {
+    console.log(this.user)
+    return this.http.get<UserAuth>(`/users/${this.user?.id}`)
+    .pipe(tap((user) => this.user$$.next(user)));
+  }
+
   register(
     name: string,
     lastName: string,
