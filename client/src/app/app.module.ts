@@ -12,7 +12,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { SliderComponent } from './slider/slider.component';
 import { LatestBlogComponent } from './main/latest-blog/latest-blog.component';
 import { AboutUsComponent } from './about-us/about-us.component';
-import { UserModule } from './user/user.module';
 import { BlogComponent } from './blog/blog.component';
 import { PostRoutingModule } from './posts/post-routing.module';
 import { AddPostComponent } from './posts/add-post/add-post.component';
@@ -35,7 +34,6 @@ import { appInterceptorProvider } from './app.interceprot';
     CoreModule,
     SharedModule,
     HttpClientModule,
-    UserModule,
     PostRoutingModule,
     AppRoutingModule,
     FormsModule,

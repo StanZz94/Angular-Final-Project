@@ -10,6 +10,7 @@ const routes: Routes = [
   {path: '', pathMatch: "full", redirectTo: '/home'},
   {path: 'home', component: MainComponent},
   {path: 'home/:id', component: CurrentPostComponent},
+  {path: 'auth', loadChildren: () => import('./user/user.module').then((m) => m.UserModule)},
   {path: 'blog', component: BlogComponent},
   {path: 'about', component: AboutUsComponent},
   {path: '**', redirectTo: '/404'},
